@@ -19,6 +19,6 @@ module.exports = {
     },
     devtool: 'source-map',
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/vue-js-simon-game/'
+        ? '/vue_simon_says_game/'
         : '/'
 }
