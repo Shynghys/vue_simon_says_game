@@ -38,10 +38,5 @@ li {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: fit-content;
-  margin: 0 auto;
-  border: 1px solid $secondSector_color;
-  border-radius: 4px;
-  padding: 8px;
 }
 </style>

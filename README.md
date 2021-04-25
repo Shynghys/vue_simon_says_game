@@ -1,5 +1,5 @@
 # vue_simon_says_game
-
+https://shynghys.github.io/vue_simon_says_game/
 ## Project setup
 ```
 npm install
@@ -22,3 +22,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+

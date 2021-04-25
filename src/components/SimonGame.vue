@@ -210,15 +210,6 @@ export default {
         return sector;
       });
     },
-    //с каждым новым раундом создается новый массив со случайными серкторами
-    // gameSelectedSectorsArray() {
-    //   const data = [];
-
-    //   for (let i = 0; i < this.roundNumber; i++) {
-    //     data.push(this.getRandomNumber());
-    //   }
-    //   return data;
-    // },
     userSelectedSectorsArray() {
       return [];
     },
@@ -347,22 +338,34 @@ export default {
 
 <style lang="scss" scoped>
 .simonGameWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+
+  border: 1px solid $secondSector_color;
+  border-radius: 4px;
+  padding: 8px;
+
+  gap: 50px;
+
   .infoAndControls {
     display: flex;
     flex-direction: column;
     row-gap: 14px;
   }
   .simonCircleWrap {
-    min-width: 300px;
-    max-width: 300px;
-    max-height: 300px;
-    min-height: 300px;
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    min-height: 400px;
     border: 4px solid white;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.55);
     border-radius: 50%;
@@ -396,6 +399,7 @@ export default {
       }
       &:hover {
         opacity: 1;
+        border: 2px solid black;
         @media (hover: none) {
           opacity: 0.7;
         }
@@ -406,7 +410,7 @@ export default {
     .sector {
       cursor: default;
       &:hover {
-        opacity: 0.7;
+        opacity: 1;
       }
     }
   }
