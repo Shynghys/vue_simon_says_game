@@ -350,7 +350,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  border: 1px solid $secondSector_color;
+  border: 1px solid $firstSector_color;
   border-radius: 4px;
   padding: 8px;
 
@@ -377,7 +377,7 @@ export default {
       border-radius: inherit;
       width: 100%;
       height: 100%;
-      opacity: 0.7;
+      opacity: 0.5;
       &_first {
         clip-path: polygon(50% 0%, 50% 50%, 0 50%, 0 0);
         background-color: $firstSector_color;

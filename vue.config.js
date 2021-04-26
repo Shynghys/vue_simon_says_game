@@ -17,7 +17,7 @@ module.exports = {
             }
         }
     },
-    devtool: 'source-map',
+
     publicPath: process.env.NODE_ENV === 'production'
         ? '/vue_simon_says_game/'
         : '/'
